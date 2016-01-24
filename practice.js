@@ -106,8 +106,8 @@ console.log(backPack);
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
   //Code Here
- for(prop in alsoMe) {
- alert();
+ for(var prop in alsoMe) {
+ alert(prop + '-->' + alsoMe[prop]);
 }
 
 
@@ -133,7 +133,7 @@ console.log(backPack);
 //Now, loop through your album object alerting every song title individually.
 
   //Code Here
- for(prop in album) {
+ for(var prop in album) {
  alert(prop);
 }
 
@@ -180,8 +180,14 @@ var user1 = {
 that each value is truthy. If it's not truthy, remove it from the object. */
 
   //Code Here
+  for (var prop in user1) {
+    if(user1[prop] !== true){
+      delete user1[prop];
+    }
+  }
 
-//Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
+//Once you get your truthy Object, Change the remaining values in the object to be specific to you 
+//(name: 'your name', username: 'your username'), rather than my information.
 
   //Code Here
 
@@ -241,7 +247,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 
 
-// Create a function called MakePerson which takes in name, birthday, ssn as its parameters and returns a new object with all of the information that you passed in.
+//Create a function called MakePerson which takes in name, birthday, ssn as its parameters and returns a 
+//new object with all of the information that you passed in.
 
   //Code Here
 
@@ -251,7 +258,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 
 
-// Create a function called MakeCard which takes in all the data it needs to make a Credit Card object and returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
+//Create a function called MakeCard which takes in all the data it needs to make a Credit Card object and 
+//returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
   //Code Here
   
@@ -261,9 +269,10 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 
 
-/* As of this point you should have a MakePerson and a MakeCard function which returns you either a person or a credit card object.
-   Now, create a bindCard function that takes in a person object as its first parameter and a creditcard object as its second parameter.
-   Have bindCard merge the two parameters together into a new object which contains all the properties from the person as well as the creditcard.
+/* As of this point you should have a MakePerson and a MakeCard function which returns you either a person 
+   or a credit card object. Now, create a bindCard function that takes in a person object as its first 
+   parameter and a creditcard object as its second parameter. Have bindCard merge the two parameters 
+   together into a new object which contains all the properties from the person as well as the creditcard.
 */
 
   //Code Here
